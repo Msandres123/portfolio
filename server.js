@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const port = process.env.PORT || 5000;
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static("./client/public"));
+app.use(express.static("./client/build"));
 app.use(express.json())
 
 let transporter = nodemailer.createTransport({
@@ -46,7 +46,7 @@ transporter.sendMail(mailOptions, (err, data) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve("./client/public/index.html"));
+  res.sendFile(path.resolve("./client/build/index.html"));
 });
 
 app.listen(port, () => {
