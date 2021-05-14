@@ -49,6 +49,7 @@ export default function Projects(props) {
           <a href="https://github.com/Msandres123/Yelpington">
             <p>GitHub</p>
           </a>
+          <a href="https://ma-yelpington.herokuapp.com/"><p>Heroku</p></a>
         </div>
       </div>
       <p>Geo-Vermonter</p>
