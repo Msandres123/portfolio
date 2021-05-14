@@ -20,9 +20,7 @@ let transporter = nodemailer.createTransport({
 
 app.post("/email", (req, res) => {
   
-// let sender = JSON.parse(req.body.email)
-// let subject = JSON.parse(req.body.subject) 
-// let text = JSON.parse(req.body.text) 
+ 
   console.log(req.body.text);
 
   let mailOptions = {

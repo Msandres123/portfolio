@@ -13,7 +13,7 @@ export default function Contact() {
       <p>Phone: 802-279-6930</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/mikael-andres-795132114/">https://www.linkedin.com/in/mikael-andres-795132114/</a></p>
       
-      <p>Send me an Email</p>
+      {/* <p>Send me an Email</p>
       <form
         method="POST"
         action="/email"
@@ -34,7 +34,7 @@ export default function Contact() {
         />
         <textarea name="text" className="email-text"></textarea>
         <input type="submit" className="email-input" />
-      </form>
+      </form> */}
     </div>
   );
 }
