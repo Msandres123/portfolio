@@ -6,7 +6,7 @@ body {
 
 .App {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #Mike-N-Cam {
@@ -15,31 +15,57 @@ body {
   border-radius: 100%;
 }
 
+
+
 #Nav-Styling {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: row;
   position: fixed;
   left:0;
-  justify-content: space-evenly;
-  height: 100vh;
-  width: 15vw;
-  background-color: rgb(10, 69, 112);
-  text-align: center;
+  justify-content: left; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+  height: 15vh;
+  width: 100vw;
+  
+  background-color: rgb(10, 69, 112);
+}
+
+#hamburger-contianer{
+  align-items: center;
+  text-align: center;
 }
 
 #Nav-Styling a {
   text-decoration: none;
   color: black;
+
+}
+
+#menu {
+  text-align: center;
+  width: 100vw;
+}
+
+#nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  align-items: center;
+ 
+
 }
 
 .Home-Container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85vw;
+  width: 100vw;
   height: 100vh;
-  padding-left: 15vw;
+  margin-top: 15vh;
 }
 
 .Home-Container p {
@@ -58,9 +84,11 @@ body {
 }
 
 .about-container {
-  margin-left: 7vw;
-  margin-right: 7vw;
-  padding-left: 15vw;
+  margin-top: 15vh;
+}
+.about-container{
+margin-left: 7vw;
+margin-right: 7vw;
 }
 
 #about-header {
@@ -73,7 +101,7 @@ body {
 .projects-container {
     margin-left: 7vw;
     margin-right: 7vw;
-    padding-left: 15vw;
+    margin-top: 15vh;
   }
 
   .projects-container li{
@@ -119,9 +147,9 @@ body {
   #contact-container{
     width: 85vw;
     height: 100vh;
-    padding-left: 15vw;
     margin-left: 7vw;
     margin-right: 7vw;
+    margin-top: 7vw;
   }
 
   #contact-container a{
@@ -149,23 +177,73 @@ body {
 
   @media screen and (max-width: 600px) {
 
+    body{
+      margin: 0;
+    }
+
     .App {
       display: flex;
       flex-direction: column;
     }
 
+    #Nav-Styling{
+        position: relative;
+        display: inline-block;
+      
+    }
 
-    #Nav-Styling {
+    #hamburger-container {
       display: flex;
-      flex-direction: column;
-      position: fixed;
+      justify-content: left;
       top:0;
-      justify-content: space-evenly;
-      height: 30vh;
       width: 100vw;
+      height: 10vh;
       background-color: rgb(10, 69, 112);
       text-align: center;
+      align-items: center;
+
+     
       
+    }
+
+   
+
+
+    #nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(10, 69, 112);
+      justify-content: flex-start;
+
+    }
+
+    #nav-links a {
+      margin-bottom: 5vh;
+      margin-top: 1vh;
+      padding: 0;
+    }
+
+    #icon-container{
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      justify-content: space-evenly;
+    
+    }
+
+
+    .Icon{
+      height: 15vh;
+  width: 15vw;
+
+    }
+
+    #bars{
+      text-align: left;
+      margin-left: 5vw;
+    
     }
 
     .Home-Container {
@@ -173,7 +251,13 @@ body {
       flex-direction: column;
       align-items: center;
       width: 70vw;
-      height: 100vh;
+      height: 60vh;
+      margin-left: 10vw;
+
+    }
+
+    .Home-Container h1{
+      text-align: center;
     }
 
 
