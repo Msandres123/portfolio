@@ -44,4 +44,3 @@ export default function NavBar(props) {
   );
 }
 
-// https://www.linkedin.com/in/mike-andres-795132114/
