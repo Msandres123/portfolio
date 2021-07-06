@@ -27,7 +27,7 @@ export default function NavBar(props) {
             <a href="https://github.com/Msandres123">
               <img className="Icon" src={props.GitHubIcon} alt="" />
             </a>
-            <a href="https://www.linkedin.com/in/mikael-andres-795132114/">
+            <a href="https://www.linkedin.com/in/mike-andres-795132114/">
               <img className="Icon" src={props.LinkedinIcon} alt="" />
             </a>
             <a href="https://www.facebook.com/mike.andres.54">
@@ -43,3 +43,5 @@ export default function NavBar(props) {
     </div>
   );
 }
+
+// https://www.linkedin.com/in/mike-andres-795132114/
